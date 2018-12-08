@@ -372,7 +372,7 @@ void quikeval_I2C_connect(void)
   if(digitalRead(QUIKEVAL_MUX_MODE_PIN) == LOW) //! 2) If pin is already high, do nothing
   {
     digitalWrite(QUIKEVAL_MUX_MODE_PIN, HIGH);  //! 3) Set the Mux pin to high
-    delay(55);                                  //! 4) And wait for LTC4315 to connect (required for rev B)
+                                                //! 4) And wait for LTC4315 to connect (required for rev B)
   }
 }
 
